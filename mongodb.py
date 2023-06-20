@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
 class MongoDB:
     def __init__(self):
         mongo_user = os.getenv("MONGO_USER")
@@ -32,8 +31,6 @@ class MongoDB:
             "content": text,
             "date": datetime.datetime.now()
         })
-
-
 
 if __name__ == "__main__":
     m = MongoDB()
